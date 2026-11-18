@@ -42,7 +42,7 @@ button { font: inherit; }
 .site-nav a:hover, .site-nav a:focus-visible { color: var(--ice); }
 .site-nav .nav-cta { padding: 11px 16px; color: var(--navy-900); background: var(--blue-soft); border-radius: 100px; letter-spacing: 0.08em; }
 .nav-cta span { margin-left: 4px; font-size: 14px; }
-.menu-toggle { display: none; border: 0; background: transparent; color: var(--ice); }
+.menu-toggle { display: none; width: 44px; height: 44px; border: 0; background: transparent; color: var(--ice); }
 
 .hero { position: relative; display: grid; min-height: 840px; grid-template-columns: 0.92fr 1.08fr; align-items: center; gap: 52px; padding-top: 118px; padding-bottom: 80px; color: var(--ice); background: var(--navy-900); }
 .hero::before { position: absolute; inset: 0; pointer-events: none; content: ""; opacity: 0.5; background: radial-gradient(circle at 75% 42%, rgba(22, 135, 232, 0.14), transparent 34%), linear-gradient(118deg, rgba(255,255,255,0.01), transparent 58%); }
@@ -283,7 +283,7 @@ h1 em, h2 span, h2 em { color: var(--blue-soft); font-style: normal; }
 }
 
 /* Verified links, enquiry form and accessibility polish */
-.card-link { color: var(--blue-soft); font-size: 10px; font-weight: 800; white-space: nowrap; }
+.card-link { display: inline-flex; min-height: 36px; align-items: center; color: var(--blue-soft); font-size: 10px; font-weight: 800; white-space: nowrap; }
 .card-link:hover, .card-link:focus-visible { color: var(--ice); text-decoration: underline; text-underline-offset: 4px; }
 .project-form { display: grid; gap: 12px; }
 .project-form label { display: grid; gap: 5px; color: var(--gold-soft); font-size: 10px; font-weight: 800; letter-spacing: .06em; }
@@ -296,4 +296,4 @@ h1 em, h2 span, h2 em { color: var(--blue-soft); font-style: normal; }
 .social-placeholder a { color: var(--blue-soft); }
 .social-placeholder a:hover, .social-placeholder a:focus-visible { color: var(--ice); text-decoration: underline; text-underline-offset: 3px; }
 :focus-visible { outline: 2px solid var(--blue-soft); outline-offset: 4px; }
-@media (max-width: 700px) { .card-footer { align-items: flex-start; flex-direction: column; gap: 8px; } .card-link { font-size: 10px; } .contact-card { padding: 22px; } }
+@media (max-width: 700px) { .menu-toggle { width: 44px; height: 44px; } .card-footer { align-items: flex-start; flex-direction: column; gap: 8px; } .card-link { min-height: 42px; font-size: 10px; } .contact-card { padding: 22px; } }
