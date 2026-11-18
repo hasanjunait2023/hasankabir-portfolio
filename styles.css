@@ -281,3 +281,19 @@ h1 em, h2 span, h2 em { color: var(--blue-soft); font-style: normal; }
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
   [data-reveal] { opacity: 1; transform: none; }
 }
+
+/* Verified links, enquiry form and accessibility polish */
+.card-link { color: var(--blue-soft); font-size: 10px; font-weight: 800; white-space: nowrap; }
+.card-link:hover, .card-link:focus-visible { color: var(--ice); text-decoration: underline; text-underline-offset: 4px; }
+.project-form { display: grid; gap: 12px; }
+.project-form label { display: grid; gap: 5px; color: var(--gold-soft); font-size: 10px; font-weight: 800; letter-spacing: .06em; }
+.project-form input, .project-form select, .project-form textarea { width: 100%; border: 1px solid rgba(234,242,248,.18); border-radius: 3px; padding: 11px 12px; color: var(--ice); background: rgba(234,242,248,.06); font: inherit; font-size: 12px; outline: none; }
+.project-form textarea { resize: vertical; min-height: 72px; }
+.project-form input:focus, .project-form select:focus, .project-form textarea:focus { border-color: var(--blue-soft); box-shadow: 0 0 0 3px rgba(119,197,255,.12); }
+.project-form option { color: var(--ink); }
+.project-form .contact-card-action { width: 100%; border: 0; cursor: pointer; font: inherit; }
+.form-note { min-height: 18px; margin: 0; color: #a7d9c0; font-size: 11px; line-height: 1.45; }
+.social-placeholder a { color: var(--blue-soft); }
+.social-placeholder a:hover, .social-placeholder a:focus-visible { color: var(--ice); text-decoration: underline; text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--blue-soft); outline-offset: 4px; }
+@media (max-width: 700px) { .card-footer { align-items: flex-start; flex-direction: column; gap: 8px; } .card-link { font-size: 10px; } .contact-card { padding: 22px; } }
